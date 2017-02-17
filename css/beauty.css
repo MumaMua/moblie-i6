@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* helvetica,verdana,san-serif无衬线字体*/
+  -webkit-text-size-adjust: none;
+  font: 400 14px/1.5 helvetica, verdana, san-serif;
+}
+#main {
+  width: 10rem;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 宋体;
+ background:url(../image/bg.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+#header {
+  height: 1.6rem;
+}
+#header img {
+  float: left;
+  width: 1.05333333rem;
+  height: 1.6rem;
+}
+#header h5 {
+  font-size: 30px;
+  margin-left: 2.34666667rem;
+  line-height: 1.6rem;
+}
+#nav {
+  height: 1.6rem;
+  background: white;
+}
+#nav ul {
+  margin-left: 0.21333333rem;
+}
+#nav ul li {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.6rem;
+  margin-left: 0.8rem;
+}
+#nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.wen_f {
+  font-size: 20px;
+  margin: 0 auto;
+  font-size: 28px;
+  width: 10rem;
+  height: 0.8rem;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+}
+.wen_f a {
+  color: #FFF;
+  text-align: center;
+}
+#foot {
+  height: 0.8rem;
+  clear: both;
+  font-size: 18px;
+  color: #505152;
+  text-align: center;
+  background: white;
+  line-height: 0.8rem;
+}
+#ibanner {
+  position: relative;
+  width: 9.33333333rem;
+  height: 9.33333333rem;
+  overflow: hidden;
+  float: left;
+  margin: 0 auto;
+}
+#ibanner_pic a {
+  position: absolute;
+  margin-top: 0.08rem;
+  display: block;
+  width: 9.33333333rem;
+  height: 9.33333333rem;
+  overflow: hidden;
+  margin-left: 0.08rem;
+}
+#ibanner_pic img {
+  width: 9.33333333rem;
+  height: 9.33333333rem;
+}
+#ibanner_btn {
+  position: absolute;
+  /*检索或设置对象的层叠顺序。*/
+  z-index: 50;
+  right: 0.13333333rem;
+  bottom: 0.13333333rem;
+  font-weight: 700;
+  /**/
+  font-family: Arial;
+  border: solid 0px #FF0000;
+}
+#ibanner_btn span {
+  display: block;
+  float: left;
+  margin-left: 0.10666667rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  background: #0CC;
+  cursor: pointer;
+  z-index: 1000;
+}
+#ibanner_btn .normal {
+  height: 0.32rem;
+  margin-top: 0.10666667rem;
+  border: 0px solid #999;
+  color: #F00;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  z-index: 1000;
+}
+#ibanner_btn .current {
+  height: 0.42666667rem;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 28px;
+  background: red;
+  z-index: 1000;
+}
+.gundong2 p {
+  text-align: center;
+  font-size: 24px;
+  font-family: 宋体;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 475px) {
+  #header h5 {
+    font-size: 23px;
+  }
+  #nav {
+    height: 1.6rem;
+    background: white;
+  }
+  #nav ul {
+    margin-left: 0.05333333rem;
+  }
+  #nav ul li {
+    font-size: 20px;
+    margin-left: 0.64rem;
+  }
+  #nav ul li a {
+    font-size: 20px;
+  }
+  .gundong2 p {
+    font-size: 20px;
+  }
+  #ibanner_btn .normal {
+    font-size: 16px;
+  }
+  #ibanner_btn .current {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #header h5 {
+    font-size: 20px;
+  }
+  #nav {
+    height: 1.6rem;
+    background: white;
+  }
+  #nav ul {
+    margin-left: 0.05333333rem;
+  }
+  #nav ul li {
+    font-size: 20px;
+    margin-left: 0.53333333rem;
+  }
+  #nav ul li a {
+    font-size: 20px;
+  }
+  #ibanner_btn .current {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  #ibanner_btn .normal {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .wen_f a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  #ibanner_btn .current {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  #ibanner_btn .normal {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .wen_f a {
+    font-size: 18px;
+  }
+  .gundong2 p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="stylesheet/less" href="css/love.less" />
+<link rel="shortcut icon" href="image/logo.png">
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/love.css" />
+<script src="js/less1.7.min.js"></script>
+<title>iPhone 6手机页面</title></head>
+<script>
+	(function(win) {
+    var doc = win.document;
+    var docEl = doc.documentElement;
+    var tid;
+
+    function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+    
+        if (width > 540) { // 最大宽度
+            width = 540;
+        }
+        var rem = width / 10; 
+		//将屏幕宽度分成10份， 1份为1rem 
+        docEl.style.fontSize = rem + 'px';
+    }
+//侦听事件并处理相应的函数。
+    win.addEventListener('resize', function() {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function(e) {/*function(e),此函数是，防止缓存的*/
+        if (e.persisted) {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    refreshRem();
+
+})(window);  /*自执行的匿名函数*/
+</script>
+<body>
+<div id="main">
+	<header id="header">
+    	<figure><img src="image/ip6x_02.jpg" /></figure>
+    	<h5>&lt;/喜欢绿色的绿子小姐&gt;</h5>
+    </header>
+    
+	<nav id="nav">
+    	<ul>
+        	<li><a href="index.html">PROTAL</a></li>
+            <li><a href="beauty.html">BEAUTY</a></li>
+            <li><a href="love.html" style="color:#396;">LOVER</a></li>
+            <li><a href="calling.html">CALLING</a></li>
+        </ul>
+    </nav>
+    <article>
+    	<section class="top">
+    <div class="wen_f"><a>We all love Programe</a></div> 
+        	<div class="l_left">
+            <img src="image/biancheng.jpg"/>
+            </div>
+        	<div class="l_right">
+            <marquee  class="gundong2" align="center" behavior="scroll" direction="up"
+          hspace="4" vspace="1" loop="-1" scrollamount="2" 
+         scrolldelay="-1" onMouseOut="this.start()" onMouseOver="this.stop()">　
+           <p>
+           喜欢上这种感觉，<br />
+           不管是调出来的还是没调出来的，<br />
+           我都喜欢。<br />
+           愿我们将来一起相伴。
+           </p>
+        </marquee>
+            
+            </div>
+        </section>
+    	<section class="botttom">
+    <div class="wen_ff"><a>We all love  photograph </a></div>
+        	<div class="b_left">
+            <img src="image/sy.jpg"/>
+            </div>
+        	<div class="b_right">
+            <marquee  class="gundong2" align="center" behavior="scroll" direction="up"
+          hspace="4" vspace="1" loop="-1" scrollamount="2" 
+         scrolldelay="-1" onMouseOut="this.start()" onMouseOver="this.stop()">　
+           <p>
+           喜欢上摄影，<br />
+           不管是拍的好看的还是不好看的，<br />
+           我都喜欢。<br />
+           将来一定要走在路上。
+           </p>
+        </marquee>
+            
+            </div>
+        </section>
+        <section class="botttom1">
+    <div class="wen_fff"><a>We all love voice </a></div>
+        	<div class="b1_left">
+            <img src="image/f9.jpg"/>
+            </div>
+        	<div class="b1_right">
+            <marquee  class="gundong2" align="center" behavior="scroll" direction="up"
+          hspace="4" vspace="1" loop="-1" scrollamount="2" 
+         scrolldelay="-1" onMouseOut="this.start()" onMouseOver="this.stop()">　
+           <p>
+           喜欢上文字，<br />
+           不管是暖心的还是犀利的，<br />
+           我都喜欢。<br />
+           想想就很开心。
+           </p>
+        </marquee>
+            
+            </div>
+        </section>
+    </article>
+    
+ <footer id="foot">2016-2017@绿子小姐　All Right Reserved</footer>   
+</div>
+</body>
+</html>

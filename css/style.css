@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* helvetica,verdana,san-serif无衬线字体*/
+  -webkit-text-size-adjust: none;
+  font: 400 14px/1.5 helvetica, verdana, san-serif;
+}
+#main {
+  width: 10rem;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 宋体;
+  background: url(../image/bg.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+#header {
+  height: 1.6rem;
+}
+#header img {
+  float: left;
+  width: 1.05333333rem;
+  height: 1.6rem;
+}
+#header h5 {
+  font-size: 30px;
+  margin-left: 2.34666667rem;
+  line-height: 1.6rem;
+}
+#nav {
+  height: 1.6rem;
+  background: white;
+}
+#nav ul {
+  margin-left: 0.21333333rem;
+}
+#nav ul li {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.6rem;
+  margin-left: 0.8rem;
+}
+#nav ul li a{
+  text-decoration:none;
+  color:black;
+  
+}
+#girl img {
+  height: 2.54666667rem;
+}
+#middle {
+  background: url(image/middle.jpg) 0 0 no-repeat;
+}
+#middle p {
+  font-size: 18px;
+  margin-left: 0.53333333rem;
+}
+#middle #p1 {
+  margin-left: 3.46666667rem;
+}
+#content section {
+  margin-top: 0.21333333rem;
+}
+#content #pic img {
+  width: 4.21333333rem;
+  height: 2.86666667rem;
+  float: left;
+  margin-left: 0.13333333rem;
+  margin-top: 0.13333333rem;
+}
+#content #pic h3 {
+  font-size: 18px;
+  color: white;
+  margin-left: 4.53333333rem;
+}
+#content #pic p {
+  font-size: 18px;
+  margin-left: 4.53333333rem;
+  margin-top: 0.16rem;
+  margin-right: 0.26666667rem;
+}
+#content #pic form {
+  float: right;
+  width: 0.8rem;
+  height: 0.48rem;
+  margin-top: 0.05333333rem;
+  margin-right: 0.53333333rem;
+}
+input {
+  background: white;
+  border: 0;
+}
+#content #pic #time {
+  font-size: 16px;
+  color: #403f3f;
+  margin-left: 5.06666667rem;
+  margin-top: 0.32rem;
+}
+#content #picc img {
+  float: right;
+  width: 3.37333333rem;
+  height: 3.37333333rem;
+  margin-right: 0.13333333rem;
+}
+#content #picc h4 {
+  font-size: 18px;
+  color: white;
+  margin-left: 0.26666667rem;
+  margin-right: 3.73333333rem;
+}
+#content #picc p {
+  font-size: 18px;
+  padding-top: 0.26666667rem;
+  margin-left: 0.26666667rem;
+  margin-right: 3.73333333rem;
+}
+#content #picc form {
+  width: 2.50666667rem;
+  height: 0.36rem;
+  margin-left: 0.8rem;
+  margin-top: 0.21333333rem;
+}
+#content #picc #time1 {
+  font-size: 16px;
+  color: #403f3f;
+  margin-left: 0.8rem;
+  margin-top: 0.26666667rem;
+}
+#foot {
+  height: 0.8rem;
+  clear: both;
+  font-size: 18px;
+  color: #505152;
+  text-align: center;
+  background: white;
+  line-height: 0.8rem;
+  margin-bottom: 0.05333333rem;
+}
+#maker {
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 1.06666667rem;
+}
+@media only screen and (max-width: 375px) {
+  #header h5 {
+    font-size: 20px;
+  }
+  #nav {
+    height: 1.6rem;
+    background: white;
+  }
+  #nav ul {
+    margin-left: 0.05333333rem;
+  }
+  #nav ul li {
+    font-size: 20px;
+    margin-left: 0.58666667rem;
+  }
+  #middle p {
+    font-size: 16px;
+  }
+  #middle #p1 {
+    margin-left: 4rem;
+  }
+  #content section {
+    margin-top: 0.37333333rem;
+  }
+  #content #pic img {
+    margin-top: 0.37333333rem;
+  }
+  #content #pic h3 {
+    font-size: 14px;
+  }
+  #content #pic p {
+    font-size: 16px;
+  }
+  #content #pic #time {
+    font-size: 14px;
+    margin-left: 4.53333333rem;
+    margin-top: 0.21333333rem;
+  }
+  #content #picc h4 {
+    font-size: 14px;
+  }
+  #content #picc p {
+    font-size: 16px;
+    padding-top: 0.21333333rem;
+  }
+  #foot {
+    font-size: 12px;
+  }
+  body {
+    /* helvetica,verdana,san-serif无衬线字体*/
+    -webkit-text-size-adjust: none;
+    font: 400 14px/1.5 helvetica, verdana, san-serif;
+  }
+}

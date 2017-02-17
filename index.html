@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="stylesheet/less" href="css/mobile.less" />
+<link rel="shortcut icon" href="image/logo.png">
+<link rel="stylesheet" href="css/sty.css" />
+<script src="js/less1.7.min.js"></script>
+<title>iPhone 6手机页面</title>
+<script>
+	(function(win) {
+    var doc = win.document;
+    var docEl = doc.documentElement;
+    var tid;
+
+    function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+    
+        if (width > 540) { // 最大宽度
+            width = 540;
+        }
+        var rem = width / 10; 
+		//将屏幕宽度分成10份， 1份为1rem 
+        docEl.style.fontSize = rem + 'px';
+    }
+//侦听事件并处理相应的函数。
+    win.addEventListener('resize', function() {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function(e) {/*function(e),此函数是，防止缓存的*/
+        if (e.persisted) {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    refreshRem();
+
+})(window);  /*自执行的匿名函数*/
+</script>
+
+</head>
+
+<body>
+<div id="main">
+	<header id="header">
+    	<figure><img src="image/ip6x_02.jpg" /></figure>
+    	<h5>&lt;/喜欢绿色的绿子小姐&gt;</h5>
+    </header>
+    
+	<nav id="nav">
+    	<ul>
+        	<li><a href="index.html" style="color:#396;">PROTAL</a></li>
+            <li><a href="beauty.html">BEAUTY</a></li>
+            <li><a href="love.html">LOVER</a></li>
+            <li><a href="calling.html">CALLING</a></li>
+        </ul>
+    </nav>
+    <div id="girl">
+    	<figure><img src="image/girl.jpg" /></figure>
+    </div>
+    <article id="middle">
+    	<p>没有什么能够阻挡，你对自由的向往。</p>
+        <p id="p1">我们都梦想着能够梦想成真。</p>
+    </article>
+    
+    <article id="content">
+    	<section id="pic">
+        	<figure><img src="image/pic_1.jpg" /></figure>
+            <h3>我有一壶酒，足以慰风尘。</h3>
+            <p>　　每个人都曾孤独过，也曾看到过别人的孤独。如果生活是一坛老酒，那么孤独就是酒后的一次蓑衣雨行。</p>
+            <form>
+            	<input type="submit" name="more" value="more" />
+            </form>
+            <div id="time">2016-7-19　　00:00</div>
+        </section>
+        
+        <section id="pic">
+        	<figure><img src="image/pic_2.jpg" /></figure>
+            <h3>从来没有一种坚持会被辜负。</h3>
+            <p>　　谁的人生不是荆棘前行，你跌倒的时候，懊恼的时候，品尝眼泪的时候，都请你不要轻言放弃，因为从来没有一种坚持会被辜负。请你相信，你的坚持，终将美好。 </p>
+            <form>
+            	<input type="submit" name="more" value="more" />
+            </form>
+            <div id="time">2016-7-19　　00:00</div>
+        </section>
+        
+        <section id="picc">
+        	<figure><img src="image/pic_3.jpg" /></figure>
+            <h4>当小周周会说话，她会跟她的前世情人周杰伦说...</h4>
+            <p>　　周杰伦、周董、超人、超级奶爸，我的爸爸有好多个名字他为我谱写了一曲前世情人我的出生延续了两世的缘分。</p>
+            <form>
+            	<input type="submit" name="more" value="点击进来收听音乐" />
+            </form>
+            <div id="time1">2016-7-19　　　00:00</div>
+        </section>
+    </article>
+    
+    <footer id="foot">2016-2017@绿子小姐　All Right Reserved</footer>
+    <!--<div id="maker">美工：梁欢娜　　首页开发：王婷婷</div>-->
+</div>
+</body>
+</html>
+

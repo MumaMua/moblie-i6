@@ -1,0 +1,193 @@
+*{
+	margin:0;
+	padding:0;	
+}
+
+body{
+   /* helvetica,verdana,san-serif无衬线字体*/
+ 	-webkit-text-size-adjust:none;
+	font:400 14px/1.5 helvetica,verdana,san-serif;
+}
+
+
+.js(@name,@px){
+	@{name}:@px / 37.5 * 1rem;
+}
+
+#main{
+	.js(width,375);
+	margin:0 auto;
+	font-family:宋体;
+	background:url(../image/bg.jpg) 0 0 no-repeat;
+	background-size:100% 100%;
+	box-sizing:border-box;
+}
+#header{
+	.js(height,60);
+}
+#header img{
+	float:left;
+	.js(width,39.5);
+	.js(height,60);
+}
+#header h5{
+	font-size:30px;
+	.js(margin-left,88);
+	.js(line-height,60);
+}
+
+#nav{
+	.js(height,60);
+	background:white;
+}
+#nav ul{
+	.js(margin-left,8);
+}
+#nav ul li{
+	float:left;
+	font-size:24px;
+	font-weight:bold;
+	list-style:none;
+	.js(line-height,60);
+	.js(margin-left,30);
+}
+#nav ul li a{
+  text-decoration:none;
+  color:black;
+  
+}
+.article{
+.js(width,375);
+.js(height,140);
+}
+.article ul{
+.js(margin-top,30);
+.js(margin-left,90);
+}
+.article ul li{
+.js(margin-top,30);
+list-style:none;
+}
+.article li a{
+font-size:20px;
+text-decoration:none;
+  color:black;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.article li a:hover{
+.js(margin-left,30);
+color:white;
+text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+transition:3s;
+}
+.piao{
+.js(width,375);
+.js(height,346);
+}
+.piao img{
+border-radius:50%;
+}
+.img1{
+float:left;
+.js(margin-left,30);
+}
+.img2{
+float:right;
+.js(margin-right,30);
+}
+.gundong2{
+.js(width,375);
+.js(height,156);
+.js(margin-bottom,30);
+
+font-size:18px;
+}
+#foot{
+	.js(height,30);
+	clear:both;
+	font-size:18px;
+	color:#505152;
+	text-align:center;
+	background:white;
+	.js(line-height,30);
+}
+@media only screen and (max-width: 502px){
+#header h5{
+		font-size:23px;
+		.js(margin-left,88);
+	}
+	#nav ul li{
+		font-size:20px;
+		.js(margin-left,23);
+	}
+	#nav ul li a{
+	font-size:20px;
+	}
+	.piao img{
+.js(margin-top,10);}
+.gundong2{.js(width,375);
+.js(height,136);
+}
+}
+@media only screen and (max-width: 375px){
+#header h5{
+		font-size:23px;
+		.js(margin-left,88);
+	}
+	
+	#nav ul li{
+		font-size:20px;
+		.js(margin-left,23);
+	}
+	#nav ul li a{
+	font-size:20px;
+	}
+	.piao{
+.js(width,375);
+.js(height,346);
+
+}
+.piao img{
+.js(margin-top,20);}
+.article ul li{
+.js(margin-bottom,6);
+}
+.gundong2{
+font-size:16px;
+}
+
+}
+@media only screen and (max-width:365px){
+#header h5{
+		font-size:18px;
+		.js(margin-left,88);
+	}
+#nav ul{
+		.js(margin-left,2);
+	}
+	#nav ul li{
+		font-size:16px;
+		.js(margin-left,13);
+	}
+	#nav ul li a{
+	font-size:18px;
+	}
+	#middle p{
+	font-size:14px;
+	.js(margin-left,20);
+}
+.article ul li a{
+font-size:16px;}
+.piao img{
+.js(width,100);
+.js(margin-top,40);
+}
+}
+
+
+
+
+
+
+
+

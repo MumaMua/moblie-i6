@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+<link rel="stylesheet/less" href="css/calling.less" />
+<script src="js/less1.7.min.js"></script>
+<link rel="stylesheet" href="css/calling.css" />
+<title>calling</title>
+<script>
+	(function(win) {
+    var doc = win.document;
+    var docEl = doc.documentElement;
+    var tid;
+
+    function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+    
+        if (width > 540) { // 最大宽度
+            width = 540;
+        }
+        var rem = width / 10; 
+		//将屏幕宽度分成10份， 1份为1rem 
+        docEl.style.fontSize = rem + 'px';
+    }
+//侦听事件并处理相应的函数。
+    win.addEventListener('resize', function() {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function(e) {/*function(e),此函数是，防止缓存的*/
+        if (e.persisted) {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    refreshRem();
+
+})(window);  /*自执行的匿名函数*/
+</script>
+
+</head>
+
+<body>
+<div id="main">
+	<header id="header">
+    	<figure><img src="image/ip6x_02.jpg" /></figure>
+    	<h5>&lt;/喜欢绿色的绿子小姐&gt;</h5>
+    </header>
+    
+	<nav id="nav">
+    	<ul>
+        	<li><a href="index.html">PROTAL</a></li>
+            <li><a href="beauty.html">BEAUTY</a></li>
+            <li><a href="love.html">LOVER</a></li>
+            <li><a href="calling.html" style="color:#396;">CALLING</a></li>
+        </ul>
+    </nav>
+	<article class="article">
+    <ul>
+    <li><a href="#">QQ:1643148250</a></li>
+    <li><a href="#">微信：小Mua~</a></li>
+    <li><a href="http://user.qzone.qq.com/1643148250/infocenter?ptsig=j7HOONgeUHyhxgqnsEo8iCXa56E0nge6CiqZPpl-RRE_">
+    空间：你越是倔，我就越喜欢。</a></li>
+    </ul>
+    </article> 
+        
+    <article class="piao">
+    	<img src="image/2.jpg" width="40%" class="img1"/>
+        <img src="image/l.jpg" width="40%" class="img2"/>
+    	<marquee  class="gundong2" align="center" behavior="scroll" direction="up"
+          hspace="4" vspace="1" loop="-1" scrollamount="2" 
+         scrolldelay="-1" onMouseOut="this.start()" onMouseOver="this.stop()">　
+           <a>行走的路人，没人喜欢平稳的泥土，无论泥土多芳香，再忙碌的人也会多看一眼风中的
+           百花。即使他们不像泥土那么稳稳的在那，但他们的努力绽放，毕竟给这世界带来了
+           难忘的片段。这个，是不是你我想要的呢？</a>
+        </marquee>
+    </article>
+      <footer id="foot">2016-2017@绿子小姐　All Right Reserved</footer>
+</div>
+</body>
+</html>
